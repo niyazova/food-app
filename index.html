@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Food</title>
+</head>
+<body>
+    <main>
+        <div class="main_left">
+            <ul class="left_list">
+                <li class="left_item-title">
+                    <img class="title_img" src="./assets/Icon.png" height="30px" alt="">
+                    <h3 class="title_h3">Nibble</h3>
+                </li>
+                <li class="left_item" id="home">
+                    <i class="fas fa-home"></i>
+                    <a class="left_item-link" href="#">Home</a>
+                </li>
+                <li class="left_item" id="explore" >
+                    <i class="fab fa-python"></i>
+                    <a class="left_item-link" href="#">Explore</a>
+                </li>
+                <li class="left_item" id="foods" >
+                    <i class="fab fa-gripfire"></i>
+                    <a class="left_item-link" href="#">Foods</a>
+                </li>
+                <li class="left_item" id="favourites" >
+                    <i class="far fa-bookmark"></i>
+                    <a class="left_item-link" href="#">Favourites</a>
+                </li>
+                <li class="left_item" id="orders">
+                    <i class="fas fa-align-justify"></i>
+                    <a class="left_item-link" href="#">Orders</a>
+                </li>
+                <li class="left_item" id="orders">
+                    <i class="fas fa-envelope"></i>
+                    <a class="left_item-link" href="#">Messages</a>
+                </li>
+                <li class="left_item" id="orders">
+                    <i class="fas fa-cog"></i>
+                    <a class="left_item-link" href="#">Settings</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main_right">
+            <nav>
+                <div class="nav_div">
+                    <i class="far fa-compass" id="navigator"></i>
+                    <p>San Francisco, California</p>
+                </div>
+                <div class="nav_div">
+                    <i class="fas fa-shopping-bag" id="bag"></i>
+                    <p>Pick up</p>
+                </div>
+                <div class="nav_div">
+                    <i class="fab fa-cc-diners-club" id="club"></i>
+                    <p>Best deals</p>
+                </div>
+                <input type="search" id="search" placeholder="Search for anything...">
+                <div class="nav_icon">
+                    <i class="fas fa-align-center" id="center"></i>
+                </div>
+                <div class="nav_icon">
+                    <i class="fas fa-shopping-cart" id="cart"></i>
+                </div>
+            </nav>
+            <div class="middle">
+                <h2>Explore categories</h2>
+                <a class="middle_link" href="#">see all  ></a>
+            </div>
+            <div class="boxes_div">
+                <div class="box_div">
+                    <i class="fab fa-gripfire" id="breakfast"></i>
+                    <h5 class="box_title">Breakfast</h5>
+                    <p id="breakPrice" class="box_cost">$97</p>
+                </div>
+                <div class="box_div">
+                    <i class="fas fa-motorcycle" id="lunch"></i>
+                    <h5 class="box_title">Lunch</h5>
+                    <p class="box_cost">$324</p>
+                </div>
+                <div class="box_div">
+                    <i class="fab fa-cc-diners-club" id="dinner"></i>
+                    <h5 class="box_title">Dinner</h5>
+                    <p class="box_cost">$23</p>
+                </div>
+                <div class="box_div">
+                    <i class="fas fa-utensils" id="cheap"></i>
+                    <h5 class="box_title">Cheap</h5>
+                    <p class="box_cost">$85</p>
+                </div>
+                <div class="box_div">
+                    <i class="fas fa-laptop-house" id="moderate"></i>
+                    <h5 class="box_title">Moderate</h5>
+                    <p class="box_cost">$168</p>
+                </div>
+                <div class="box_div">
+                    <i class="fas fa-chart-line" id="expensive"></i>
+                    <h5 class="box_title">Expensive</h5>
+                    <p class="box_cost">$250</p>
+                </div>
+            </div>
+            <form id="form">
+                <input type="url" placeholder="Image" id="img">
+                <input type="text" placeholder="Food Name" id="foodName">
+                <input type="number" placeholder="Price" id="price">
+                <select name="operation" id="operation" >
+                    <option id="breakfast" value="#breakfast">breakfast</option>
+                    <option id="lunch" value="#lunch">lunch</option>
+                    <option id="dinner" value="#dinner">dinner</option>
+                </select>
+                <button class="form_btn" id="btn" onclick="calculate()" >Add</button>
+            </form>
+            <div class="container">
+                <!-- <div class="food">
+                    <img class="con_img" id="conImg" src="./assets/bread-2796393__480.jpg" height="130px" alt="">
+                    <h5 class="con_title" id="conTxt">Spicy Na Thai</h5>
+                    <div class="div">
+                        <p class="con_option" id="conOpt">#lunch</p>
+                        <p class="con_price" id="conPrice">13.5$</p>
+                    </div>
+                </div>      -->
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
